@@ -81,3 +81,78 @@ Each row represents a unique patient observation, identified by `Patient_ID`.
 This dataset structure is suitable for end-to-end ML, MLOps, and teaching-oriented implementations following best practices.
 
 ---
+
+### Model Structure Designed
+
+
+```
+project_name/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── models/
+│   └── artifacts/
+│       └── model.pkl
+│
+├── logs/
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── components/
+│   │   ├── __init__.py
+│   │   ├── data_ingestion.py
+│   │   ├── data_preprocessing.py
+│   │   ├── model_building.py
+│   │   └── model_evaluation.py
+│   │
+│   ├── pipeline/
+│   │   ├── __init__.py
+│   │   └── training_pipeline.py
+│   │
+│   ├── config.py
+│   ├── logger.py
+│   ├── exceptions.py
+│   └── utils.py
+│
+├── serving/
+│   ├── __init__.py
+│   │
+│   ├── main.py
+│   │
+│   ├── routes/
+│   │   └── prediction_routes.py
+│   │
+│   ├── schemas/
+│   │   └── prediction_schema.py
+│   │
+│   ├── services/
+│   │   └── prediction_service.py
+│   │
+│   ├── templates/
+│   │   └── index.html
+│   │
+│   └── static/
+│       ├── css/
+│       │   └── styles.css
+│       └── js/
+│           └── script.js
+│
+├── metrics.json
+│
+├── main.py
+│
+├── dvc.yaml
+├── dvc.lock
+│
+├── Dockerfile
+├── .dockerignore
+├── .gitignore
+│
+├── requirements.txt
+│
+└── README.md
+
+```
