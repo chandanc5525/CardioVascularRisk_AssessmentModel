@@ -1,6 +1,6 @@
-def main():
-    print("Hello from cardiovascularrisk-assessmentmodel!")
-
+from src.pipeline.training_pipeline import TrainingPipeline
 
 if __name__ == "__main__":
-    main()
+    pipeline = TrainingPipeline()
+    metrics = pipeline.run_pipeline()
+    print(metrics)

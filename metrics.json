@@ -1,0 +1,26 @@
+{
+    "RandomForestRegressor": {
+        "r2_score": 0.9705399660864438,
+        "mae": 3.2442309090909096
+    },
+    "GradientBoostingRegressor": {
+        "r2_score": 0.9738687116498432,
+        "mae": 3.1207048087062184
+    },
+    "AdaBoostRegressor": {
+        "r2_score": 0.9326541936764533,
+        "mae": 5.3407839332269
+    },
+    "LinearRegression": {
+        "r2_score": 0.9775423744187214,
+        "mae": 2.798600401234952
+    },
+    "SVR": {
+        "r2_score": 0.9742199871477546,
+        "mae": 2.963703177916421
+    },
+    "DecisionTreeRegressor": {
+        "r2_score": 0.9353266768392148,
+        "mae": 4.610545454545455
+    }
+}

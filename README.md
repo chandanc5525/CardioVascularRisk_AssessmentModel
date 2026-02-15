@@ -156,3 +156,9 @@ project_name/
 └── README.md
 
 ```
+
+---
+
+### To run the Pipeline:
+
+- python main.py

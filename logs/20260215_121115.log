@@ -1,0 +1,24 @@
+2026-02-15 12:11:17,376 - INFO - Starting data ingestion
+2026-02-15 12:11:17,534 - INFO - Dataset loaded successfully with shape: (5500, 17)
+2026-02-15 12:11:17,606 - INFO - Train-test split completed and saved
+2026-02-15 12:11:17,606 - INFO - Starting data preprocessing
+2026-02-15 12:11:17,614 - INFO - Categorical columns: ['smoking_status', 'family_history_heart_disease', 'risk_category']
+2026-02-15 12:11:17,614 - INFO - Numerical columns: ['age', 'bmi', 'systolic_bp', 'diastolic_bp', 'cholesterol_mg_dl', 'resting_heart_rate', 'daily_steps', 'stress_level', 'physical_activity_hours_per_week', 'sleep_hours', 'diet_quality_score', 'alcohol_units_per_week']
+2026-02-15 12:11:17,629 - INFO - Preprocessing completed successfully
+2026-02-15 12:11:17,630 - INFO - Starting model training
+2026-02-15 12:11:17,630 - INFO - Training RandomForestRegressor
+2026-02-15 12:11:20,714 - INFO - Training GradientBoostingRegressor
+2026-02-15 12:11:21,752 - INFO - Training AdaBoostRegressor
+2026-02-15 12:11:22,252 - INFO - Training LinearRegression
+2026-02-15 12:11:22,261 - INFO - Training SVR
+2026-02-15 12:11:22,988 - INFO - Training DecisionTreeRegressor
+2026-02-15 12:11:23,043 - INFO - All models trained successfully
+2026-02-15 12:11:23,043 - INFO - Starting model evaluation
+2026-02-15 12:11:23,079 - INFO - RandomForestRegressor -> R2: 0.9705399660864438, MAE: 3.2442309090909096
+2026-02-15 12:11:23,081 - INFO - GradientBoostingRegressor -> R2: 0.9738687116498432, MAE: 3.1207048087062184
+2026-02-15 12:11:23,093 - INFO - AdaBoostRegressor -> R2: 0.9326541936764533, MAE: 5.3407839332269
+2026-02-15 12:11:23,095 - INFO - LinearRegression -> R2: 0.9775423744187214, MAE: 2.798600401234952
+2026-02-15 12:11:23,722 - INFO - SVR -> R2: 0.9742199871477546, MAE: 2.963703177916421
+2026-02-15 12:11:23,724 - INFO - DecisionTreeRegressor -> R2: 0.9353266768392148, MAE: 4.610545454545455
+2026-02-15 12:11:23,726 - INFO - Best Model: LinearRegression
+2026-02-15 12:11:23,726 - INFO - Best model and metrics saved successfully
